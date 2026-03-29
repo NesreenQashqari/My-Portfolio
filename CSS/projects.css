@@ -1,0 +1,145 @@
+body {
+  background-color: #F4D7E2;
+}
+
+body{
+    margin:0;
+    font-family: Palatino;
+}
+
+/* Nav */
+
+/* Navbar */
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#3E2723;
+    padding:20px 40px;
+}
+
+/* name */
+.name{
+    color:white;
+    font-size:22px;
+}
+
+/* Nav links */
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:30px;
+    margin:0;
+    padding:0;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:24px;
+    position:relative; 
+}
+
+/* line under link on hover */
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px; 
+    width:0%;
+    height:3px; 
+    background:#F4D7E2; 
+    transition: width 0.3s ease;
+}
+
+/* expand line on hover */
+.nav-links a:hover::after{
+    width:100%;
+}
+/* Nav End */
+
+
+.paragraph {
+ font-size:3rem;
+margin-bottom:10px;
+margin-top: 24px;
+text-align: center;
+color:#3E2723;
+
+}
+
+/* cards start */
+
+.card-container {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+
+}
+
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  
+  
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;       
+  height: auto;      
+  max-height: 190px; 
+  object-fit: cover;
+  display: block;
+   
+
+
+}
+
+
+
+
+.btn-primary {
+  background-color: #5a3e36;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #472c22;
+}
+
+/* CARD END */
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 21px 41px;
+    line-height: 1;
+}
+
+.nav-links a {
+    font-size: 24px;
+    line-height: 1;
+}
+
