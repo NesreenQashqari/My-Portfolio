@@ -1,11 +1,11 @@
-/* Base styles (desktop by default) */
+
 body {
   margin: 0;
   font-family: Palatino;
   background-color: #F4D7E2;
 }
 
-/* Navbar */
+/* Navbar start */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -37,19 +37,24 @@ body {
 .nav-links a::after {
   content: "";
   position: absolute;
+
   left: 0;
   bottom: -5px;
+
   width: 0%;
   height: 3px;
+
   background: #F4D7E2;
   transition: width 0.3s ease;
 }
 
 .nav-links a:hover::after {
+
   width: 100%;
 }
 
-/* Section title */
+
+/*  title */
 .paragraph {
   font-size: 3rem;
   margin-bottom: 10px;
@@ -58,7 +63,7 @@ body {
   color: #3E2723;
 }
 
-/* Card container */
+/*  containers */
 .card-container {
   display: flex;
   justify-content: center;
@@ -67,7 +72,7 @@ body {
   padding: 20px;
 }
 
-/* Individual cards */
+/*  cards */
 .card {
   border-radius: 15px;
   overflow: hidden;
@@ -94,6 +99,7 @@ body {
   color: white;
   border: none;
   padding: 8px 12px;
+
   border-radius: 6px;
   text-align: center;
   margin-top: 10px;
@@ -104,9 +110,9 @@ body {
   background-color: #472c22;
 }
 
-/* ------------------ Media Queries ------------------ */
+/* ----------------- browser sizes --------------- */
 
-/* Tablet - 768px to 1199px */
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .navbar {
     padding: 15px 30px;
@@ -125,12 +131,12 @@ body {
   }
 
   .card {
-    flex: 1 1 calc(50% - 15px); /* 2 cards per row */
+    flex: 1 1 calc(50% - 15px);
     max-width: calc(50% - 15px);
   }
 }
 
-/* Mobile - up to 767px */
+
 @media (max-width: 767px) {
   .navbar {
     flex-direction: column;
@@ -162,7 +168,7 @@ body {
   }
 
   .card {
-    flex: 1 1 100%; /* 1 card per row on mobile */
+    flex: 1 1 100%; 
     max-width: 100%;
   }
 }

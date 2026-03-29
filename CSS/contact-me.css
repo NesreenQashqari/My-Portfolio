@@ -1,11 +1,11 @@
-/* Base styles (desktop by default) */
+
 body {
   margin: 0;
   font-family: Palatino;
   background-color: #F4D7E2;
 }
 
-/* Navbar */
+/* Navbar starrt */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -49,7 +49,7 @@ body {
   width: 100%;
 }
 
-/* Contact Section */
+/* Contact  */
 .contact {
   display: flex;
   flex-direction: column;
@@ -72,7 +72,7 @@ body {
   margin-bottom: 60px;
 }
 
-/* Contact Links Grid */
+/*  Links grid  */
 .contact-links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -81,7 +81,7 @@ body {
   width: 100%;
 }
 
-/* Contact Cards */
+/* cards */
 .contact-links a {
   display: flex;
   align-items: center;
@@ -89,13 +89,18 @@ body {
   gap: 12px;
   padding: 18px;
   text-decoration: none;
+
   color: #3E2723;
   border-radius: 12px;
+
+
   background: rgba(228, 178, 178, 0.396);
   border: 1px solid #3E2723;
   backdrop-filter: blur(10px);
+
   transition: all 0.35s ease;
   opacity: 0;
+
   transform: translateY(40px);
   animation: fadeUp 0.8s ease forwards;
 }
@@ -105,13 +110,13 @@ body {
 .contact-links a:nth-child(3) { animation-delay: 0.6s; }
 .contact-links a:nth-child(4) { animation-delay: 0.8s; }
 
-/* Icon */
+/* bootstrap icons */
 .contact-links i {
   font-size: 1.4rem;
   transition: 0.3s;
 }
 
-/* Hover Effect */
+/* hovers  */
 .contact-links a:hover {
   transform: translateY(-6px) scale(1.03);
   border-color: #6d453e;
@@ -123,7 +128,7 @@ body {
   color: #3E2723;
 }
 
-/* Animation */
+/* animations */
 @keyframes fadeUp {
   to {
     opacity: 1;
@@ -131,9 +136,8 @@ body {
   }
 }
 
-/* ------------------ Media Queries ------------------ */
+/* ------------browser sizes ----------------- */
 
-/* Tablet - 768px to 1199px */
 @media (min-width: 768px) and (max-width: 1199px) {
   .navbar {
     padding: 15px 30px;
@@ -161,7 +165,6 @@ body {
   }
 }
 
-/* Mobile - up to 767px */
 @media (max-width: 767px) {
   .navbar {
     flex-direction: column;
